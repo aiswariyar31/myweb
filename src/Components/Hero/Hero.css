@@ -1,0 +1,129 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero img {
+  margin-top: 10px;
+  transition: filter 0.4s;
+  border-radius: 50%; 
+  border: 2px solid #5698c9; 
+}
+.hero img:hover{
+  margin-top: 10px;
+  filter: grayscale(5%);
+  transition: filter 0.4s, transform 11.4s, box-shadow 0.4s; 
+  transform: scale(1.1) rotate(20deg);
+  border-radius: 50%; 
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 30px rgb(45, 3, 254);
+}
+
+.hero h1 {
+  text-align: center;
+  width: 80%;
+  font-size: 50px;
+  font-weight: 400;
+}
+.hero h1 span {
+  background: linear-gradient(570deg, #0906a2 40%, #00c2e4 60%);
+  background-clip: text;
+  text-align: center;
+  width: 70%;
+  font-size: 70px;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p {
+  width: 50%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 40px;
+  
+}
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.hero-connect {
+  padding: 25px 45px;
+  border-radius: 50px;
+  background: linear-gradient(550deg, #57aae8 0.6%, #000000 80.06%);
+  cursor: pointer;
+}
+.hero-resume {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.hero-resume a{
+  text-decoration: none;
+  color: white;
+}
+.hero-connect:hover {
+  border: 2px solid #fff;
+}
+.hero-resume:hover {
+  border-color: #57aae8;
+}
+@media(max-width:768px){
+  .hero img{
+    margin-top: 100px;
+    width: 190px;
+  }
+  .hero img:hover{
+    margin-top: 100px;
+    filter: grayscale(5%);
+    transition: filter 0.4s, transform 11.4s, box-shadow 0.4s; 
+    transform: scale(1.1) rotate(20deg);
+    border-radius: 50%; 
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 30px rgb(45, 3, 254);
+  }
+
+  .hero h1{
+    margin-top: 50px;
+    width: 100%;
+    font-size: 40px;
+  }
+  .hero h1 span {
+    background: linear-gradient(570deg, #0906a2 40%, #00c2e4 60%);
+    background-clip: text;
+    text-align: center;
+    width: 90%;
+    font-size: 60px;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p{
+    width: 60%;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 10px 0px;
+  }
+  .hero-action{
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  .hero-connect{
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+  .hero-resume{
+    padding: 20px 50px;
+    border-radius: 
+    40px;
+  }
+}

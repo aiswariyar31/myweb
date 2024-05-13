@@ -1,0 +1,137 @@
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+.projects-title {
+  position: relative;
+}
+
+.projects-title h1 {
+  padding: 0px 180px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.projects-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.projects-completed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.project-completed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+  margin-bottom: 19px;
+}
+.project-completed:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  transition: 0.5s;
+  color: #064cff;
+  background-color: rgba(23, 36, 70, 0.701); /* Blue transparent layer */
+  opacity: 9; /* Initially hidden */
+  transition: opacity 0.5s;
+}
+.project-completed h1 {
+  font-size: 25px;
+  font-weight: 500;
+  background: linear-gradient(585deg, #f60808 10.6%, #0906a2 80.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-completed p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #2638d6;
+}
+.project-completed span {
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px rgb(0, 8, 253), 0 0 25px rgb(0, 0, 0),
+    0 0 5px rgb(0, 247, 255);
+    cursor: pointer;
+}
+.project-completed a{
+    text-decoration: none;
+}
+.hrr-color {
+    border-color: #48c0e7; 
+}
+@media (max-width: 768px) {
+  .projects {
+    align-items: start;
+    gap: 40px;
+    margin: 20px 10px;
+  }
+  .projects-title h1 {
+    padding: 0;
+    font-size: 50px;
+    margin-left: 20px;
+  }
+  .projects-title img {
+    width: 530px;
+    margin-right: -80px;
+    padding: 0px 5px;
+  }
+
+  .projects-completed {
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  .project-completed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: 0.5s;
+  }
+  .project-completed:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .project-completed h1 {
+    font-size: 25px;
+    font-weight: 500;
+    background: linear-gradient(585deg, #f60808 10.6%, #0906a2 80.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .projects hr {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+  .projects hr:hover {
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    margin: 20px 0;
+  }
+  .project-completed p {
+    font-size: 14px;
+    font-weight: 200;
+    padding-bottom: 10px;
+  }
+}
